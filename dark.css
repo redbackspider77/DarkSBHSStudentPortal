@@ -1,0 +1,56 @@
+body {
+    background-color: #29333c !important;
+}
+
+div#topnav {
+    background-color: #1a2026 !important;
+}
+
+.mainlinks ul.menu {
+    background-color: #1a2026 !important;
+}
+
+div#topnav div.mainlinks ul li a {
+    color: #e9eef3 !important;
+}
+
+div#topnav div.userblock {
+    background-color: #1a2026 !important;
+    color: #cbd5e0 !important;
+}
+
+div#topnav div.userblock ul.menu li a {
+    color: #cbd5e0 !important;
+}
+
+h1#sitelogo img {
+    background-image: url('chrome-extension://hcfafjbkapoalclkgllghflfinhmkoia/assets/logo-portal-student-white.png') !important;
+}
+
+#sub-heading-block, #contentarea {
+    background: #2d3748 !important;
+}
+
+#table-events-box table td.evtable {
+    color: #cbd5e0 !important;
+}
+
+.main h1 {
+    color: #d6e0eb !important;
+}
+
+.article-info {
+    color: #a0aec0 !important;
+}
+
+.main h2 {
+    color: #ffffff !important;
+}
+
+#all {
+    color: #cbd5e0 !important;
+}
+
+p.item {
+    color: black !important;
+}
