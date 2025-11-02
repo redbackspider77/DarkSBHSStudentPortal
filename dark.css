@@ -54,3 +54,56 @@ h1#sitelogo img {
 p.item {
     color: black !important;
 }
+
+.moduletable {
+    div {
+        color: #333 !important;
+    }
+}
+
+#contentarea {
+    a:not(.moduletable a) {
+        color: #60a5fa !important;
+        text-decoration: none !important;
+    }
+    
+    a:not(.moduletable a):hover {
+        color: #93c5fd !important;
+        text-decoration: underline !important;
+    }
+    
+    a:not(.moduletable a):active {
+        color: #3b82f6 !important;
+    }
+}
+
+/* hide the redundant gif which i will not be wasting my time to style */
+.shsfpimages {
+    display: none !important;
+}
+
+.pagination li {
+    border-color: #4a5568 !important;
+}
+
+/* my absences */
+
+.has-bootstrap {
+    background-color: #2d3748 !important;
+
+    h3 {
+        color: #e2e8f0 !important;
+    }
+
+    .card {
+        background-color: #4a5568 !important;
+        
+        h4, li {
+            color: #edf2f7 !important;
+        }
+    }
+}
+
+.breadcrumbs span {
+    color: #cbd5e0 !important;
+}
