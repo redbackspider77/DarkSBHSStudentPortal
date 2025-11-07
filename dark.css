@@ -1,5 +1,8 @@
+/* terribly hardcoded stylesheet, but so is the sbhs portal :)) */
+
 body {
     background-color: #29333c !important;
+    background-image: none !important;
 }
 
 div#topnav {
@@ -27,7 +30,7 @@ h1#sitelogo img {
     background-image: url('chrome-extension://hcfafjbkapoalclkgllghflfinhmkoia/assets/logo-portal-student-white.png') !important;
 }
 
-#sub-heading-block, #contentarea {
+#sub-heading-block, #contentarea, #all  {
     background: #2d3748 !important;
 }
 
@@ -62,22 +65,22 @@ p.item {
 }
 
 #contentarea {
-    a:not(.moduletable a) {
+    a:not(.moduletable a, #nav a) {
         color: #60a5fa !important;
         text-decoration: none !important;
     }
     
-    a:not(.moduletable a):hover {
+    a:not(.moduletable a, #nav a):hover {
         color: #93c5fd !important;
         text-decoration: underline !important;
     }
     
-    a:not(.moduletable a):active {
+    a:not(.moduletable a, #nav a):active {
         color: #3b82f6 !important;
     }
 }
 
-/* hide the redundant gif which i will not be wasting my time to style */
+/* hide the redundant gif which i will not be using my time to style */
 .shsfpimages {
     display: none !important;
 }
@@ -102,8 +105,41 @@ p.item {
             color: #edf2f7 !important;
         }
     }
+
+    thead {
+        --bs-table-bg: #3e495b !important;
+    }
+
+
 }
 
 .breadcrumbs span {
     color: #cbd5e0 !important;
 }
+
+.menu:not(#slide-block ul, .userblock ul, .mainlinks ul, .helpresponse-block ul) {
+    background-color: #2d3748 !important;
+
+    a {
+        color: #edf2f7 !important;
+        text-decoration: none !important;
+    }
+    
+    a:hover {
+        color: #93c5fd !important;
+        text-decoration: underline !important;
+    }
+    
+    a:active {
+        color: #3b82f6 !important;
+    }
+
+    li:hover {
+        background-color: #1a2026 !important;
+    }
+}
+
+#nav h3 {
+    color: #edf2f7 !important;
+}
+
