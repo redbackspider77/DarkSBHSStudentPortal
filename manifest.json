@@ -6,13 +6,29 @@
     "content_scripts": [
         {
             "matches": ["https://student.sbhs.net.au/*"],
-            "js": ["scripts/script.js"],
-            "css": ["dark.css"],
+            "js": ["scripts/fussyNavArrows.js"],
+            "css": ["main.css"],
             "run_at": "document_end"
         },
         {
             "matches": ["https://student.sbhs.net.au/award-scheme"],
-            "css": ["award.css"]
+            "css": ["styles/award.css"]
+        },
+        {
+            "matches": ["https://student.sbhs.net.au/help"],
+            "css": ["styles/help.css"]
+        },
+        {
+            "matches": ["https://student.sbhs.net.au/timetable"],
+            "css": ["styles/tt.css"]
+        },
+        {
+            "matches": ["https://student.sbhs.net.au/diary"],
+            "css": ["styles/diary.css"]
+        },
+        {
+            "matches": ["https://student.sbhs.net.au/feedback"],
+            "css": ["styles/feedback.css"]
         },
         {
             "matches": ["https://student.sbhs.net.au/device"],

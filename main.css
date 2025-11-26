@@ -30,8 +30,16 @@ h1#sitelogo img {
     background-image: url('chrome-extension://hcfafjbkapoalclkgllghflfinhmkoia/assets/logo-portal-student-white.png') !important;
 }
 
-#sub-heading-block, #contentarea, #all  {
+#sub-heading-block, #contentarea, #all, ul.category-module_menu {
     background: #2d3748 !important;
+}
+
+.mod-articles-category-title {
+    color: #cbd5e0 !important;
+}
+
+.autotoc {
+    border-color: #AAAAAA !important;
 }
 
 #table-events-box table td.evtable {
@@ -67,17 +75,17 @@ p.item {
 }
 
 #contentarea {
-    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info) {
+    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info, .item-title a, .email-button, .big-button) {
         color: #60a5fa !important;
         text-decoration: none !important;
     }
     
-    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info):hover {
+    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info, .item-title a, .email-button, .big-button):hover {
         color: #93c5fd !important;
         text-decoration: underline !important;
     }
     
-    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info):active {
+    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info, .item-title a, .email-button, .big-button):active {
         color: #3b82f6 !important;
     }
 }
@@ -194,4 +202,30 @@ select {
 .jpane-toggler span, .jpane-toggler-down span {
     padding-left: 7.5px !important;
     background: none !important;
+}
+
+a.email-button, a.big-button {
+    text-decoration: none !important;
+
+    &:hover {
+        color: #d7dce2 !important;
+    }
+}
+
+#email-redirect-submit {
+    color: white !important;
+    background-color: #3e495b !important;
+}
+
+input {
+    background-color: #3e495b !important;
+    color: #edf2f7 !important;
+
+    &:disabled {
+        opacity: 0.7;
+    }
+}
+
+#wide-header div.search {
+    background-color: #3e495b !important;
 }

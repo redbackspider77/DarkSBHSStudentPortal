@@ -1,0 +1,15 @@
+.subheading-category {
+    color: #edf2f7 !important;
+}
+
+.cat-children h3 {
+    display: none !important;
+}
+
+.main .category-list .cat-children > ul li {
+    background-color: #3e495b !important;
+}
+
+.main .category-list .cat-children > ul li > span.item-title {
+    background-color: #9A8F6E !important;
+}
