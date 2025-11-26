@@ -18,6 +18,11 @@
             "matches": ["https://student.sbhs.net.au/device"],
             "js": ["scripts/fussyQR.js"],
             "run_at": "document_end"
+        },
+        {
+            "matches": ["https://student.sbhs.net.au/self-service"],
+            "js": ["scripts/fussyDownArrows.js"],
+            "run_at": "document_end"
         }
     ],
     "web_accessible_resources": [

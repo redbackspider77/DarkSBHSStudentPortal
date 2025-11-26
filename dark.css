@@ -174,9 +174,24 @@ p.item {
 }
 
 #nav h3 {
-    color: #edf2f7 !important;
+    color: #f4f6f9 !important;
 }
 
 blockquote {
     background-color: #3e495b !important;
+}
+
+select {
+    color: #edf2f7 !important;
+    background-color: #3e495b !important;
+}
+
+.pane-sliders .panel h3 {
+    color: #edf2f7 !important;
+    background: #3e495b !important;
+}
+
+.jpane-toggler span, .jpane-toggler-down span {
+    padding-left: 7.5px !important;
+    background: none !important;
 }
