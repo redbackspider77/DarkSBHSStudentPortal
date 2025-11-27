@@ -6,6 +6,7 @@
     "content_scripts": [
         {
             "matches": ["https://student.sbhs.net.au/*"],
+            "exclude_matches": ["https://student.sbhs.net.au/interviews/*"],
             "js": ["scripts/fussyNavArrows.js"],
             "css": ["main.css"],
             "run_at": "document_end"
@@ -29,6 +30,10 @@
         {
             "matches": ["https://student.sbhs.net.au/feedback"],
             "css": ["styles/feedback.css"]
+        },
+        {
+            "matches": ["https://student.sbhs.net.au/search*"],
+            "css": ["styles/search.css"]
         },
         {
             "matches": ["https://student.sbhs.net.au/device"],

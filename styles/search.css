@@ -1,0 +1,8 @@
+.word {
+    background: #2d3748 !important;
+}
+
+button {
+    background: url("chrome-extension://nloakeneokkhleokldggkodldljaoabe/assets/search-arrow-white.png") no-repeat left top !important;
+    color: #edf2f7 !important;
+}
