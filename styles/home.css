@@ -1,0 +1,56 @@
+/*
+
+attempt at styling modules on the home page, remember to add to manifest if using these
+
+.moduletable h3 {
+    background-color: #9A8F6E !important;
+}
+
+.shs-ataglance > .item:nth-child(odd) {
+    background-color: #3e495b !important;
+}
+
+.shs-ataglance > .item:nth-child(even) {
+    background-color: #364052 !important;
+}
+
+.moduletable {
+    a:not(#nav a, .navcontainer a) {
+        color: #60a5fa !important;
+        text-decoration: none !important;
+    }
+
+    a:not(#nav a, .navcontainer a):hover {
+        color: #93c5fd !important;
+    }
+
+    a:not(#nav a, .navcontainer a):active {
+        color: #3b82f6 !important;
+    }
+
+    div, span {
+        color: #d8e0e7 !important;
+    }
+
+    div {
+        background-color: #3e495b !important;
+    }
+}
+
+div#modules-top > div.modules-top-right section {
+    background-color: #3e495b !important;
+}
+
+div.smile {
+    color: #b3b3b3 !important;
+}
+
+div.featured {
+    background-color: #3d4657 !important;
+}
+
+tr, td {
+    border-color: #5a6575 !important;
+}
+
+*/
