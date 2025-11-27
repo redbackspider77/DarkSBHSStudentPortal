@@ -33,16 +33,13 @@
         },
         {
             "matches": ["https://student.sbhs.net.au/search*"],
-            "css": ["styles/search.css"]
+            "css": ["styles/search.css"],
+            "js": ["scripts/searchArrow.js"],
+            "run_at": "document_end"
         },
         {
             "matches": ["https://student.sbhs.net.au/device"],
             "js": ["scripts/fussyQR.js"],
-            "run_at": "document_end"
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/self-service"],
-            "js": ["scripts/fussyDownArrows.js"],
             "run_at": "document_end"
         }
     ],

@@ -199,9 +199,12 @@ select {
     background: #3e495b !important;
 }
 
-.jpane-toggler span, .jpane-toggler-down span {
-    padding-left: 7.5px !important;
-    background: none !important;
+.jpane-toggler span {
+    background: transparent url("chrome-extension://hcfafjbkapoalclkgllghflfinhmkoia/assets/j_arrow_down.png") 5px 50% no-repeat !important;
+}
+
+.jpane-toggler-down span {
+    background: transparent url("chrome-extension://hcfafjbkapoalclkgllghflfinhmkoia/assets/j_arrow.png") 5px 50% no-repeat !important;
 }
 
 a.email-button, a.big-button {
