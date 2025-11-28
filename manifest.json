@@ -1,52 +1,38 @@
 {
     "name": "Dark SBHS Student Portal",
-    "description": "Allows users of the SBHS Student Portal to switch to a dark theme.",
+    "description": "Removes the risk of flashbang by the SBHS Student Portal.",
     "version": "1.0",
     "manifest_version": 3,
     "content_scripts": [
         {
             "matches": ["https://student.sbhs.net.au/*"],
             "exclude_matches": ["https://student.sbhs.net.au/interviews/*"],
-            "js": ["scripts/fussyNavArrows.js"],
-            "css": ["main.css"],
-            "run_at": "document_end"
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/award-scheme"],
-            "css": ["styles/award.css"]
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/help"],
-            "css": ["styles/help.css"]
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/timetable"],
-            "css": ["styles/tt.css"]
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/diary"],
-            "css": ["styles/diary.css"]
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/feedback"],
-            "css": ["styles/feedback.css"]
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/search*"],
-            "css": ["styles/search.css"],
-            "js": ["scripts/searchArrow.js"],
-            "run_at": "document_end"
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/device"],
-            "js": ["scripts/fussyQR.js"],
-            "run_at": "document_end"
+            "js": ["content.js"],
+            "run_at": "document_start"
         }
     ],
     "web_accessible_resources": [
         {
-            "resources": ["assets/*"],
+            "resources": ["assets/*", "styles/*.css", "scripts/*.js"],
             "matches": ["https://student.sbhs.net.au/*"]
         }
+    ],
+    "action": {
+        "default_popup": "extension/index.html",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "32": "icons/icon32.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "permissions": [
+        "storage"
     ]
 }

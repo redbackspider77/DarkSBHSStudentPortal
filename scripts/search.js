@@ -1,4 +1,4 @@
-searchButton = document.querySelector('.word button');
+const searchButton = document.querySelector('.word button');
 
 if (searchButton) {
     searchButton.textContent = '> Search';

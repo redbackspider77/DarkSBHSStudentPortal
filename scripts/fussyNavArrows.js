@@ -1,5 +1,5 @@
-let tinyAnnoyingArrows = document.querySelectorAll('.breadcrumbs img')
+const tinyAnnoyingArrows = document.querySelectorAll('.breadcrumbs img')
 
 Array.from(tinyAnnoyingArrows).forEach((e) => {
-    e.src = 'chrome-extension://hcfafjbkapoalclkgllghflfinhmkoia/assets/arrow-white.png';
+    e.src = chrome.runtime.getURL(`assets/arrow-white.png`);
 });

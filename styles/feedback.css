@@ -1,5 +1,13 @@
-/*
 .contact form {
-    background: 
+    background-color: #2d3748 !important;
+
+    color: #e9eef3 !important;
 }
-*/
+
+.contact label.invalid, .star {
+    color: #ff7575 !important;
+}
+
+.contact input.invalid, .contact textarea.invalid {
+    border-color: #ff7575 !important;
+}
