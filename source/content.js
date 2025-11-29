@@ -100,5 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const jsModules = ['device', 'search']
     if (jsModules.includes(subdir)) {
         runJS(subdir);
+    } else if (subdir === 'feedback') {         /* feedback page also has a button with the same problem as search's */
+        runJS('search');
     }
 });
