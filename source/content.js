@@ -1,6 +1,8 @@
 const possibleSubDirs = ['absences', 'award-scheme', 'diary', 'feedback', 'help', 'home', 'search', 'timetable'];
 
 function injectCSS(file) {
+    file += '.css';
+
     const href = chrome.runtime.getURL('styles/' + file);
 
     if (document.head.querySelector(`link.darkSBHS[href="${href}"]`)) {
@@ -17,16 +19,21 @@ function injectCSS(file) {
 
 function updateTheme(enabled) {
     if (enabled) {
+        if (location.href.startsWith('https://login.sbhs.net.au/')) {
+            injectCSS('login');
+            return;
+        }
+
         const path = location.pathname;
 
-        injectCSS('main.css');
+        injectCSS('main');
 
         const subdirectory = path.split('/')[1];
 
         if (possibleSubDirs.includes(subdirectory)) {
-            injectCSS(subdirectory + '.css');
+            injectCSS(subdirectory);
         } else if (subdirectory === '') {
-            injectCSS('home.css')
+            injectCSS('home');
         }
     } else {
         const existing = document.head.querySelectorAll('link.darkSBHS');
@@ -37,30 +44,34 @@ function updateTheme(enabled) {
     }
 }
 
-chrome.storage.local.get(['enabled'], (data) => {
-    updateTheme(data.enabled ?? true);
-});
-
-chrome.storage.onChanged.addListener(changes => {
-    if (changes.enabled) {
-        updateTheme(changes.enabled.newValue);
-    }
-});
-
 function runJS(name) {
     import(chrome.runtime.getURL(`scripts/${name}.js`))
         .catch(err => console.error(err));
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    runJS('fussyNavArrows');
+function injectJS() {
+    document.addEventListener("DOMContentLoaded", () => {
+        runJS('fussyNavArrows');
 
-    const subdir = location.pathname.split('/')[1];
+        const subdir = location.pathname.split('/')[1];
 
-    const jsModules = ['device', 'search']
-    if (jsModules.includes(subdir)) {
-        runJS(subdir);
-    } else if (subdir === 'feedback') {         /* feedback page also has a button with the same problem as search's */
-        runJS('search');
+        const jsModules = ['device', 'search']
+        if (jsModules.includes(subdir)) {
+            runJS(subdir);
+        } else if (subdir === 'feedback') {         /* feedback page also has a button with the same problem as search's */
+            runJS('search');
+        }
+    });
+}
+
+chrome.storage.local.get(['enabled'], (data) => {
+    updateTheme(data.enabled ?? true);
+
+    if ((data.enabled ?? true) && !location.href.startsWith('https://login.sbhs.net.au/')) injectJS();
+});
+
+chrome.storage.onChanged.addListener(changes => {
+    if (changes.enabled) {
+        updateTheme(changes.enabled.newValue);
     }
 });
