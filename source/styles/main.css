@@ -79,17 +79,17 @@ p.item {
 }
 
 #contentarea {
-    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info, .item-title a, .email-button, .big-button) {
+    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info, .item-title a, .email-button, .big-button, nav-link) {
         color: #60a5fa !important;
         text-decoration: none !important;
     }
     
-    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info, .item-title a, .email-button, .big-button):hover {
+    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info, .item-title a, .email-button, .big-button, nav-link):hover {
         color: #93c5fd !important;
         text-decoration: underline !important;
     }
     
-    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info, .item-title a, .email-button, .big-button):active {
+    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info, .item-title a, .email-button, .big-button, nav-link):active {
         color: #3b82f6 !important;
     }
 }

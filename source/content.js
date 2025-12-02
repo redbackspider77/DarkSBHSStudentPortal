@@ -1,46 +1,4 @@
-/*
-        {
-            "matches": ["https://student.sbhs.net.au/*"],
-            "exclude_matches": ["https://student.sbhs.net.au/interviews/*"],
-            "js": ["scripts/fussyNavArrows.js"],
-            "css": ["styles/main.css"],
-            "run_at": "document_end"
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/award-scheme"],
-            "css": ["styles/award.css"]
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/help"],
-            "css": ["styles/help.css"]
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/timetable"],
-            "css": ["styles/tt.css"]
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/diary"],
-            "css": ["styles/diary.css"]
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/feedback"],
-            "css": ["styles/feedback.css"]
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/search*"],
-            "css": ["styles/search.css"],
-            "js": ["scripts/searchArrow.js"],
-            "run_at": "document_end"
-        },
-        {
-            "matches": ["https://student.sbhs.net.au/device"],
-            "js": ["scripts/fussyQR.js"],
-            "run_at": "document_end"
-        }
-
-*/
-
-const possibleSubDirs = ['award-scheme', 'diary', 'feedback', 'help', 'home', 'search', 'timetable'];
+const possibleSubDirs = ['absences', 'award-scheme', 'diary', 'feedback', 'help', 'home', 'search', 'timetable'];
 
 function injectCSS(file) {
     const href = chrome.runtime.getURL('styles/' + file);
@@ -67,6 +25,8 @@ function updateTheme(enabled) {
 
         if (possibleSubDirs.includes(subdirectory)) {
             injectCSS(subdirectory + '.css');
+        } else if (subdirectory === '') {
+            injectCSS('home.css')
         }
     } else {
         const existing = document.head.querySelectorAll('link.darkSBHS');

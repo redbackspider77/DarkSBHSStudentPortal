@@ -1,9 +1,5 @@
-/*
-
-attempt at styling modules on the home page, however i prefer the original. remember to add to manifest if using these
-
 .moduletable h3 {
-    background-color: #9A8F6E !important;
+    background-color: #6e819a !important;
 }
 
 .shs-ataglance > .item:nth-child(odd) {
@@ -11,7 +7,7 @@ attempt at styling modules on the home page, however i prefer the original. reme
 }
 
 .shs-ataglance > .item:nth-child(even) {
-    background-color: #364052 !important;
+    background-color: #3B4557 !important;
 }
 
 .moduletable {
@@ -46,11 +42,26 @@ div.smile {
 }
 
 div.featured {
-    background-color: #3d4657 !important;
+    background-color: #3B4557 !important;
 }
 
 tr, td {
     border-color: #5a6575 !important;
 }
 
-*/
+span.bar {
+    border-color: #4d4d4d !important;
+}
+
+div.important{
+    background-color: #b78c54 !important;
+}
+
+tr.important {
+    background-color: #95754b !important;
+    color: white !important;
+}
+
+tr.featured {
+    background-color: #374052 !important;
+}
