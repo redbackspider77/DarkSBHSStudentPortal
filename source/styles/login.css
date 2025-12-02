@@ -1,3 +1,40 @@
 html {
     background-image: url("chrome-extension://__MSG_@@extension_id__/assets/bg.jpg") !important;
 }
+
+#shs-login > * {
+    background-color: #2d3748 !important;
+    color: #cbd5e0 !important;
+
+    h2 {
+        color: white !important;
+    }
+}
+
+a {
+    color: #60a5fa !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #93c5fd !important;
+    text-decoration: underline !important;
+}
+
+a:active {
+    color: #3b82f6 !important;
+}
+
+input {
+    background-color: #3e495b !important;
+
+    color: #cbd5e0 !important;
+}
+
+/* this was for https://login.microsoftonline.com/ but i decided not to mess with it as some may use it for services other than sbhs sso
+
+div#backgroundImage {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/assets/bg.jpg") !important;
+}
+
+*/
