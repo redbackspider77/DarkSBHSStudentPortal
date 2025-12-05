@@ -1,5 +1,9 @@
 html {
-    background-image: url("chrome-extension://__MSG_@@extension_id__/assets/bg.jpg") !important;
+    background-image: url("../assets/bg.jpg") !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
 }
 
 #shs-login > * {
@@ -34,7 +38,7 @@ input {
 /* this was for https://login.microsoftonline.com/ but i decided not to mess with it as some may use it for services other than sbhs sso
 
 div#backgroundImage {
-    background-image: url("chrome-extension://__MSG_@@extension_id__/assets/bg.jpg") !important;
+    background-image: url("../assets/bg.jpg") !important;
 }
 
 */
