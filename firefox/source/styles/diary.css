@@ -1,0 +1,26 @@
+.day.today {
+    background-color: #303A4B !important;
+    border-color: #303A4B !important;
+
+    .visible.school:not(#calendar-week .day .content > ul > li.visible:nth-child(even)) {
+        background-color: #303A4B !important;
+    }
+}
+
+#calendar-week .day .content > ul > li.visible:nth-child(even) {
+    background-color: #364052 !important;
+}
+
+#calendar-week .display-day {
+    background-color: #1f2937 !important;
+    color: #f2f5f8 !important;
+}
+
+#calendar-week .day .content > ul > li.interstital {
+    background-color: #a5a5a5 !important;
+
+    span {
+        color: #edf2f7 !important;
+        background-color: #2d3748 !important;
+    }
+}

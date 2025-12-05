@@ -1,0 +1,28 @@
+form {
+    background-color: #2d3748 !important;
+
+    color: #e9eef3 !important;
+}
+
+input, textarea {
+    background-color: #3e495b !important;
+
+    color: #e9eef3 !important;
+    padding: 3px;
+}
+
+.contact label.invalid, .star {
+    color: #ff7575 !important;
+}
+
+.contact input.invalid, .contact textarea.invalid {
+    border-color: #ff7575 !important;
+}
+
+button {
+    background: none !important;
+
+    color: #e9eef3 !important;
+
+    padding-left: 5px !important;
+}

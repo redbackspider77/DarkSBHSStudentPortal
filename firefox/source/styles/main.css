@@ -1,0 +1,238 @@
+/* terribly hardcoded stylesheet, but so is the sbhs portal :)) */
+
+body {
+    background-color: #29333c !important;
+    background-image: none !important;
+}
+
+div#topnav {
+    background-color: #1a2026 !important;
+}
+
+section#fullnavblock {
+    background-color: #0f3b58 !important;
+}
+
+.mainlinks ul.menu {
+    background-color: #1a2026 !important;
+}
+
+div#topnav div.mainlinks ul li a {
+    color: #e9eef3 !important;
+}
+
+div#topnav div.userblock {
+    background-color: #1a2026 !important;
+    color: #cbd5e0 !important;
+}
+
+div#topnav div.userblock ul.menu li a {
+    color: #cbd5e0 !important;
+}
+
+h1#sitelogo img {
+    background-image: url('../assets/logo-portal-student-white.png') !important;
+}
+
+#sub-heading-block, #contentarea, #all, ul.category-module_menu {
+    background: #2d3748 !important;
+}
+
+.mod-articles-category-title {
+    color: #cbd5e0 !important;
+}
+
+.autotoc {
+    border-color: #AAAAAA !important;
+}
+
+#table-events-box table td.evtable {
+    color: #cbd5e0 !important;
+}
+
+.main {
+    h1 {
+        color: #d6e0eb !important;
+    }
+
+    h2, h3 {
+        color: #D8C8A8 !important;
+    }
+}
+
+.article-info {
+    color: #a0aec0 !important;
+}
+
+#all {
+    color: #cbd5e0 !important;
+}
+
+p.item {
+    color: black !important;
+}
+
+.moduletable {
+    div {
+        color: #333 !important;
+    }
+}
+
+#contentarea {
+    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info, .item-title a, .email-button, .big-button, nav-link) {
+        color: #60a5fa !important;
+        text-decoration: none !important;
+    }
+    
+    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info, .item-title a, .email-button, .big-button, nav-link):hover {
+        color: #93c5fd !important;
+        text-decoration: underline !important;
+    }
+    
+    a:not(.moduletable a, #nav a, .paginate_button a, .nav-link, .btn-info, .item-title a, .email-button, .big-button, nav-link):active {
+        color: #3b82f6 !important;
+    }
+}
+
+/* hide the redundant gif which i will not be using my time to style */
+.shsfpimages {
+    display: none !important;
+}
+
+.pagination li {
+    border-color: #4a5568 !important;
+}
+
+.has-bootstrap {
+    color: #edf2f7 !important;
+    background-color: #2d3748 !important;
+
+    h3 {
+        color: #e2e8f0 !important;
+    }
+
+    .card {
+        background-color: #4a5568 !important;
+        
+        h5, h4, ul.legend-vertical {
+            color: #edf2f7 !important;
+        }
+    }
+
+    table {
+        color: #edf2f7 !important;
+        border-color: #b2b8c2 !important;
+    }
+
+    thead {
+        --bs-table-bg: #3e495b !important;
+        color: #edf2f7 !important;
+    }
+
+    li.paginate_button {
+        a {
+            background-color: #2d3748 !important;
+            color: #60a5fa !important;
+        }
+
+        a:hover {
+            text-decoration: none !important;
+            color: #93c5fd !important;
+        }
+        
+        a:active {
+            color: #3b82f6 !important;
+        }
+    }
+
+    tr.odd {
+        background-color: #424c5e !important;
+        background-image: none !important;
+    }
+
+    .verti-timeline {
+        border-color: transparent !important;
+    }
+
+    
+}
+
+.breadcrumbs {
+    span {
+        color: #cbd5e0 !important;
+    }
+}
+
+.menu:not(#slide-block ul, .userblock ul, .mainlinks ul, .helpresponse-block ul) {
+    background-color: #2d3748 !important;
+
+    a {
+        color: #edf2f7 !important;
+        text-decoration: none !important;
+    }
+    
+    a:hover {
+        color: #93c5fd !important;
+        text-decoration: underline !important;
+    }
+    
+    a:active {
+        color: #3b82f6 !important;
+    }
+
+    li:hover {
+        background-color: #1a2026 !important;
+    }
+}
+
+#nav h3 {
+    color: #f4f6f9 !important;
+}
+
+blockquote {
+    background-color: #3e495b !important;
+}
+
+select {
+    color: #edf2f7 !important;
+    background-color: #3e495b !important;
+}
+
+.pane-sliders .panel h3 {
+    color: #edf2f7 !important;
+    background: #3e495b !important;
+}
+
+.jpane-toggler span {
+    background: transparent url("../assets/j_arrow_down.png") 5px 50% no-repeat !important;
+}
+
+.jpane-toggler-down span {
+    background: transparent url("../assets/j_arrow.png") 5px 50% no-repeat !important;
+}
+
+a.email-button, a.big-button {
+    text-decoration: none !important;
+
+    &:hover {
+        color: #d7dce2 !important;
+    }
+}
+
+#email-redirect-submit {
+    color: white !important;
+    background-color: #3e495b !important;
+}
+
+input {
+    background-color: #3e495b !important;
+    color: #edf2f7 !important;
+
+    &:disabled {
+        opacity: 0.7;
+    }
+}
+
+#wide-header div.search {
+    background-color: #3e495b !important;
+}

@@ -1,0 +1,19 @@
+.word {
+    background: #2d3748 !important;
+}
+
+button {
+    color: #edf2f7 !important;
+    background: none !important;
+
+    padding-left: 5px !important;
+}
+
+dl.search-results {
+    background-color: #2d3748 !important;
+}
+
+span.highlight {
+    color: #2c2d2e !important;
+    background-color: #a2aa37 !important;
+}
