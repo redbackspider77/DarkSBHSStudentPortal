@@ -1,8 +1,12 @@
 A browser extension which locally alters the appearance of the SBHS Student Portal to eliminate the risk of flashbang for students, as no native dark mode is available.
 
-Install from the Chrome Web Store listing: https://chromewebstore.google.com/detail/dark-sbhs-student-portal/ghjjghnniapicmmhdlhhclkagkbncohh
+## Installation
 
----
+👉 Chrome Web Store: https://chromewebstore.google.com/detail/dark-sbhs-student-portal/ghjjghnniapicmmhdlhhclkagkbncohh
+
+👉 Firefox Add-ons: https://addons.mozilla.org/en-US/firefox/addon/dark-sbhs-student-portal/
+
+#### What if Chrome Web Store is blocked?
 
 If met with the error below when using a dedicated school chrome profile, you should temporarily add your home Google account and refresh the page. You will then be able to install the extension, after which you can sign out of your home Google account.
 
