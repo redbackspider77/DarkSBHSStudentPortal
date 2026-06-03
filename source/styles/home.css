@@ -65,3 +65,7 @@ tr.important {
 tr.featured {
     background-color: #374052 !important;
 }
+
+div:has(> div.housepoints-display) {
+    display: none !important;
+}
